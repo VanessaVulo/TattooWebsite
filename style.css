@@ -1,0 +1,197 @@
+@import url("mobilestyles.css");
+@import url("tabletstyles.css");
+
+
+body {
+
+    background-image: linear-gradient(white, grey);
+}
+
+
+header img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+}
+
+nav {
+    
+    
+    margin-bottom: 1em; /*this places some space between elements.*/
+    font-weight: bold;
+    text-align: center;
+}
+
+nav ul {
+
+    padding: 0;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+
+}
+
+nav li {
+    list-style-type:none;/*this removes bullet point*/
+    background-color: rgb(106, 102, 102);
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    min-width: 12%;
+    margin: .75em;
+}
+
+
+
+nav ul li a {
+
+    color: white;
+    text-decoration: none; /*This removes the underline from links*/
+}
+
+figure {
+
+    text-align: left;
+    
+}
+
+figure img {
+
+    height: auto;
+    max-width: 400px;
+    width:100%;
+    
+}
+
+main {
+    padding:1em;
+    background-image: linear-gradient(white, white, grey);
+    min-height: 800px;
+    border-radius: 1.0em;
+    margin-bottom: 1em;
+    box-shadow: 0.5em 0.5em 0.5em black;
+}
+
+/*This was for our three column layout*/
+
+main .row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+main div .column {
+    float: left;
+}
+
+main div .right {
+
+    float: left;
+    padding:0.5em;
+    width: 25%;
+    
+}
+
+main div .center {
+    width: 64%;
+    
+}
+
+/*Three column layout end.*/
+ 
+/*.availability table begins*/
+
+.availability table {
+    border:0.1em solid black;
+    border-collapse: collapse;
+    width: 50%;
+    margin-left: 2.5%;
+    background-color: white;
+}
+
+.availability caption {
+    border: 0.1em solid black;
+    font-size:1.5em;
+    font-weight: bold;
+}
+
+.availability th, td {
+
+    border: 0.1em solid black;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.availability th {
+    background-color: black;
+    color: white;
+}
+/*.availability table ends*/
+
+footer {
+    background-image: linear-gradient(to right, white,grey,grey);
+    border-radius: 1.0em;
+    text-align: center;
+}
+
+
+
+/*Begin desktop.*/
+@media screen and (min-width: 1400px) {
+
+
+    header {
+
+        background-image: linear-gradient(to right, white,grey);
+        box-shadow: 0.5em 0.5em 0.5em grey;
+    }
+    header img {
+
+        width:auto;
+        height: 5em; 
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    nav {
+
+        padding-top: 0.4em;
+        padding-bottom: 0.4em;
+        background-color: linear-gradient (to right white, grey);
+        float: right;/*This floats the nav element to right side of page.*/
+        margin-top: -5.3em;/*This moves the nav elements above where it would normally be.*/
+        overflow: hidden;
+        border-top: solid 0.2em white,grey;
+        border-bottom: solid 0.2em white, grey;
+        width: 43%;
+    }
+    nav ul {
+        overflow: hidden; /* Clear the floats inside the ul element. */
+    }
+    
+    nav ul li {
+        float: left; /* Float the list items to the left. */
+        box-shadow: 0.5em 0.5em 0.5em grey;
+        
+    
+        /* Additional styling as needed. */
+    }
+
+    main div .center {
+        padding:0.5em;
+        width: 45%;
+        /*border-right: 0.2em solid black;
+        border-left: 0.2em solid black;*/
+    
+    }
+    main div .left {
+        float: left;
+        width: 25%;
+        padding: 0.5em;
+        
+    }
+
+
+}
+/*End desktop.*/

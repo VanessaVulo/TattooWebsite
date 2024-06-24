@@ -1,0 +1,27 @@
+/*Begin mobile.*/
+@media screen and (max-width: 480px) {
+
+    nav {
+
+        border-radius: 1.0em; /*this rounds the corner of elements.*/
+    }
+    
+    nav ul li {
+
+        border-radius: 1em;
+    }
+
+    div .tablet {
+
+        display: none;
+    }
+
+    div .desktop {
+        display: none;
+    
+    }
+
+
+    
+}
+/*End mobile.*/
