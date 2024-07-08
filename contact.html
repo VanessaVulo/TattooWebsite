@@ -5,7 +5,8 @@
           <meta charset="utf-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <link rel="stylesheet" href="style.css">
-    </head>
+          <script src="https://cdn.tailwindcss.com"></script>
+          <script src="adbutton.js"></script>
     <body>
 
         <header><img src="media/images/sakatattoo.png" alt="Saka Tattoo logo"></header>
@@ -22,6 +23,48 @@
 
         <main>
             
+            <div class="bg-gray-200 p-1 rounded-lg">
+
+            <form action="https://example.com/contact-info" method="POST" id="contact-info"
+             class="max-w-md mx-auto my-10 flex flex-col gap-5">
+
+             <div class="flex flex-col">
+                <label class="text-lg text-gray-900" for="full_name">Full name</label>
+                <input type="text" id="fn-input" class="border border-gray-500 p-2 w-52" name="full_name" />
+                <span id="input-text"></span>
+            </div>
+             <div class="flex flex-col">
+                <label class="text-lg text-gray-900" for="phone_number">Phone number</label>
+                <input type="text" id="fn-input" class="border border-gray-500 p-2 w-52" name="phone_number" />
+                <span id="input-text"></span>
+            </div>
+            <div class="flex flex-col">
+                <label class="text-lg text-gray-900" for="email">Email</label>
+                <input type="text" id="fn-input" class="border border-gray-500 p-2 w-52" name="email" />
+                <span id="input-text"></span>
+            </div>
+            <div class="flex flex-col">
+                <label class="text-lg text-gray-900" for="age">Age</label>
+                <input type="text" id="fn-input" class="border border-gray-500 p-2 w-52" name="age" />
+                <span id="input-text"></span>
+            </div>
+            <div class="flex flex-col">
+                <label class="text-lg text-gray-900" for="skin_type">Skin type</label>
+                <input type="text" id="fn-input" class="border border-gray-500 p-2 w-52" name="skin_Type" />
+                <span id="input-text"></span>
+            </div>
+            <div class="flex justify-between">
+                <label class="text-lg text-gray-900" for="design">Description of design</label>
+                <textarea class="border border-gray-500 p-2" rows="10" cols="50" name="design">
+                </textarea>
+            </div>
+            <div>
+                <button class="px-5 py-2 bg-gray-300 text-black">Send</button>
+            </div>
+            </form>
+
+            </div>
+    
         </main>
 
         <footer>
